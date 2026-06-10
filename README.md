@@ -1,3 +1,5 @@
+![Cover](./assets/cover.png)
+
 # pi-credits
 
 A [pi](https://pi.dev/) extension that shows the active model provider's credit balance or rate-limit usage as a footer status.
