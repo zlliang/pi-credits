@@ -9,9 +9,6 @@
   "files": ["extensions", "README.md", "LICENSE"],
   "pi": { "extensions": ["./extensions"] },
   "scripts": { "typecheck": "tsc --noEmit" },
-  "dependencies": {
-    "zod": "^4.4.3"
-  },
   "peerDependencies": {
     "@earendil-works/pi-agent-core": "*",
     "@earendil-works/pi-ai": "*",

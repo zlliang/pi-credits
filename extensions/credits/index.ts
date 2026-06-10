@@ -1,5 +1,4 @@
 import { CreditsManager } from "./manager";
-import { loadConfig } from "../shared/config";
 import { isUsage } from "../shared/usage";
 
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
@@ -17,9 +16,6 @@ export default function (pi: ExtensionAPI) {
 
   pi.on("session_start", (_event, ctx) => {
     if (!ctx.hasUI) return;
-
-    const config = loadConfig(ctx, "credits");
-    if (!config) return;
 
     creditsManager = new CreditsManager();
     creditsManager.refresh(ctx);
