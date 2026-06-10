@@ -3,8 +3,13 @@
 A [pi](https://pi.dev/) extension that shows the active model provider's credit balance or rate-limit usage as a footer status.
 
 - The status appears only while a supported provider is active and uses that provider's stored credential or API key.
-- Supported providers: OpenAI Codex, OpenRouter, and Vercel AI Gateway.
 - The status refreshes on session start, model switch, and after each turn that incurs usage.
+
+## Supported providers
+
+- **OpenAI Codex:** rate-limit usage of the 5-hour and weekly windows, as used percentages.
+- **OpenRouter:** remaining credit balance in dollars.
+- **Vercel AI Gateway:** remaining credit balance in dollars.
 
 ## Install
 
