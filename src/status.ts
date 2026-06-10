@@ -1,5 +1,4 @@
 import type { Theme } from "@earendil-works/pi-coding-agent";
-
 import type { Credits, CreditsLane } from "./types";
 
 const WINDOWS_WARNING = 70;

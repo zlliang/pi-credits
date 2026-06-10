@@ -1,4 +1,4 @@
-import { toNumber } from "./utils";
+import { toNumber } from "../utils";
 
 import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 import type { Credits, CreditsProvider } from "../types";

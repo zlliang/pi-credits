@@ -1,4 +1,4 @@
-import { toNumber } from "./utils";
+import { toNumber } from "../utils";
 
 import type { Credits, CreditsProvider } from "../types";
 
