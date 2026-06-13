@@ -1,41 +1,21 @@
-![Cover](./assets/cover.png)
-
 # pi-credits
 
 > [!WARNING]
-> This repository has moved to the [`pi-packages` monorepo](https://github.com/zlliang/pi-packages/tree/main/packages/pi-credits). It is archived and no longer maintained here. Install the package from npm with `pi install npm:pi-credits`.
+> **This package has moved.** pi-credits is now a built-in extension of
+> [pi-spark](https://github.com/zlliang/pi-spark) — install `pi-spark` and the
+> credits status line is included. Disable it with `"credits": false` in your
+> spark config.
+>
+> This repository is archived and the standalone `pi-credits` npm package is
+> deprecated and no longer updated.
 
-A [pi](https://pi.dev/) extension that shows the active model provider's credit balance or rate-limit usage in the footer. It appears only for supported providers and uses the provider's stored credential or API key.
-
-![Screenshot](./assets/screenshot.png)
-
-> Example with an OpenAI Codex subscription, paired with my [pi-spark](https://github.com/zlliang/pi-spark) package.
-
-## Supported providers
-
-- DeepSeek
-- Fireworks
-- Moonshot
-- OpenAI Codex
-- OpenRouter
-- Vercel AI Gateway
-
-Most provider-specific fetching approaches references [CodexBar](https://github.com/steipete/codexbar). Fireworks is an exception: its balance lives behind an internal gRPC API, so the approach was reverse-engineered from the `firectl` binary — see [docs/fireworks.md](./docs/fireworks.md).
-
-## Install
-
-Install from npm:
+Install pi-spark instead:
 
 ```bash
-pi install npm:pi-credits
+pi install npm:pi-spark
 ```
 
-For local development from the monorepo:
-
-```bash
-pi install /path/to/pi-packages/packages/pi-credits
-```
-
-## Other pi packages
-
-- [pi-spark](https://github.com/zlliang/pi-packages/tree/main/packages/pi-spark): a small, opinionated collection of pi extensions.
+The credits extension shows the active provider's credit balance or rate-limit
+usage in the status line, for DeepSeek, Fireworks, Moonshot, OpenAI Codex,
+OpenRouter, and Vercel AI Gateway. See the
+[pi-spark README](https://github.com/zlliang/pi-spark#credits) for details.
