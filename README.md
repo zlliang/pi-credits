@@ -2,6 +2,9 @@
 
 # pi-credits
 
+> [!WARNING]
+> This repository has moved to the [`pi-packages` monorepo](https://github.com/zlliang/pi-packages/tree/main/packages/pi-credits). It is archived and no longer maintained here. Install the package from npm with `pi install npm:pi-credits`.
+
 A [pi](https://pi.dev/) extension that shows the active model provider's credit balance or rate-limit usage in the footer. It appears only for supported providers and uses the provider's stored credential or API key.
 
 ![Screenshot](./assets/screenshot.png)
@@ -27,12 +30,12 @@ Install from npm:
 pi install npm:pi-credits
 ```
 
-Install from git:
+For local development from the monorepo:
 
 ```bash
-pi install git:github.com/zlliang/pi-credits
+pi install /path/to/pi-packages/packages/pi-credits
 ```
 
 ## Other pi packages
 
-- [pi-spark](https://github.com/zlliang/pi-spark): a small, opinionated collection of pi extensions.
+- [pi-spark](https://github.com/zlliang/pi-packages/tree/main/packages/pi-spark): a small, opinionated collection of pi extensions.
